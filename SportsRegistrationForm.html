@@ -1,0 +1,157 @@
+<!--Sports Registration Form  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Registration Form</title>
+    <style>
+        table {
+            border: 1px solid red;
+            width: 100%;
+            height: 585px;
+            font-size: 25px;
+            font-weight: bold;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        table,
+        tr,
+        td {
+            border: 2px solid black;
+        }
+
+        caption {
+            border: 2px solid black;
+            color: red;
+            font-size: 45px;
+            background-color: yellow;
+        }
+
+        input[name="button"] {
+            color: white;
+            background-color: black;
+            padding: 20px;
+            font-weight: bold;
+            font: 25px;
+            border-radius: 20px;
+        }
+
+        textarea {
+            width: 95%;
+        }
+
+        input[type="text"] {
+            width: 95%;
+        }
+
+        input[type="password"] {
+            width: 95%;
+        }
+
+        select[name="select age"] {
+            width: 95%;
+            font-size: 15px;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        body {
+            background-color: teal;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption>Sports Registration Form</caption>
+        <tr>
+            <td>
+                <label for="name">Enter Name</label>
+            </td>
+            <td>
+                <input type="text" id="name">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="pword">Password</label>
+            </td>
+            <td>
+                <input type="password" id="pword">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="address">Address</label>
+            </td>
+            <td>
+                <textarea name="address" id="address" cols="5" rows="5"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="sports">Select Sports</label>
+            </td>
+            <td>
+                <input type="checkbox" name="hockey" id="hockey" style="margin: 1% 1% 1% -29%;">
+                <label for="hockey">Hockey</label>
+                <input type="checkbox" name="football" id="football" style="margin:1% 1% 1% 1%">
+                <label for="football"> Football</label>
+                <input type="checkbox" name="badminton"
+                id="sports" style="margin:1% 1% 1% 1%">
+                <label for="badminton">Badminton</label>
+                <input type="checkbox" name="cricket" id="sports" style="margin:1% 1% 1% 1%">
+                <label for="cricket">Cricket</label>
+                <input type="checkbox" name="volleyball" id="sports" style="margin:1% 1% 1% 1%">
+                <label for="volleyball">Volleyball</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="gender">Select Gender</label>
+            </td>
+            <td>
+                <input type="radio" name="gender" id="gender" style="margin: 1% 1% 1% -58%;" >Male
+                <input type="radio" name="gender" id="gender" style="margin:1% 1% 1% 5%">Female
+                <input type="radio" name="gender" id="gender" style="margin:1% 1% 1% 5%">Other
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="age">Select Your Age</label>
+            </td>
+            <td>
+                <select name="select age" id="age">
+                    <option value="5-10">5-10</option>
+                    <option value="10-15">10-15</option>
+                    <option value="15-20">15-20</option>
+                    <option value="20-25">20-25</option>
+                    <option value="25-30">25-30</option>
+                    <option value="30-35">30-35</option>
+                    <option value="35-40">35-40</option>
+                    <option value="40-45">40-45</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="file">Choose File</label>
+            </td>
+            <td>
+                <input type="file" name="file" id="file" style="margin: 1% 1% 1% -70%;">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="button" name="button" value="Click Me">
+                <input type="reset" name="button">
+                <input type="submit" name="button">
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
